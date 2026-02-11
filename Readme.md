@@ -12,6 +12,7 @@
 
 - [templates/HostRequestReceived.jinja2](templates/HostRequestReceived.jinja2): Template for the "host request received" email, leveraging well-known sections like a user (includes avatar, name and age), or a clickable button, and strings from [en.json](en.json).
 - [email_models.py](email_models.py): Defines `HostRequestReceived` dataclass providing arguments for the template.
+  - Will also provide a way to instantiate with `test_data` so emails can be rendered for validation.
 
 ## Inner workings
 
