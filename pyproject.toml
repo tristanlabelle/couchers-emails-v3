@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jinja-translate"
+version = "0.1.0"
+description = "Small project using Jinja2 templates"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Your Name" }]
+dependencies = [
+  "Jinja2>=3.0"
+]

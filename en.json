@@ -1,0 +1,8 @@
+{
+    "generic.greeting": "Hi {{ name }},",
+    "host_request_received.subject": "{{ name }} sent you a host request",
+    "host_request_received.received_host_request": "{{ name }} sent you a host request",
+    "host_request_received.requested_dates": "Requested from {{ from_date }} to {{ to_date }}.",
+    "host_request_received.view_host_request_caption": "View host request",
+    "host_request_received.quick_decline_caption": "Quick decline (no login needed)"
+}

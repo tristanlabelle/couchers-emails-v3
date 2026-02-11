@@ -1,0 +1,11 @@
+{% extends _layout %}
+{% import _sections as sections %}
+{% block subject %}{{ "host_request_received.subject"|translate(name=surfer.name) }}{% endblock %}
+{% block body %}
+{{ sections.para("generic.greeting"|translate(name=user_name)) }}
+{{ sections.para("host_request_received.received_host_request"|translate(name=surfer.name)) }}
+{{ sections.user(surfer, comment="host_request_received.requested_dates"|translate(from_date=from_date, to_date=to_date)) }}
+{{ sections.quote(text) }}
+{{ sections.button("host_request_received.view_host_request_caption"|translate, target_url=view_url) }}
+{{ sections.button("host_request_received.quick_decline_caption"|translate, target_url=quick_decline_url) }}
+{% endblock %}

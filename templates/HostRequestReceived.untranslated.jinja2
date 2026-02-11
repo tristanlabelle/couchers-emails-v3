@@ -1,0 +1,18 @@
+{% extends _layout %}
+{% import _sections as sections %}
+{% block subject %}{{ surfer.name }} sent you a host request{% endblock %}
+{% block preview %}{% endblock %}
+{% block body %}
+{% call sections.para() %}
+Hi {{ user_name }},
+{% endcall %}
+{% call sections.para() %}
+{{ surfer.name }} sent you a host request
+{% endcall %}
+{% call sections.user(surfer) %}
+Requested from <b>{{ from_date }}</b> to <b>{{ to_date }}</b>.
+{% endcall %}
+{{ sections.quote(text) }}
+{{ sections.button("View host request", target_url=view_url) }}
+{{ sections.button("Quick decline (no login needed)", target_url=quick_decline_url) }}
+{% endblock %}

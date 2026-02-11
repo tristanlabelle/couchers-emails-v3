@@ -1,0 +1,12 @@
+Hi Alice,
+
+Bob sent you a host request
+
+Bob, 42, Tokyo
+Requested from 2000-01-01 to 2000-01-02.
+> Please host me
+
+View host request: https://example.com/requests
+
+Quick decline (no login needed): https://example.com/quick-decline
+

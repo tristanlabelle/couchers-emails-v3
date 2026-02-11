@@ -1,0 +1,16 @@
+{% macro para(text=None) %}
+{{ text if text else caller() }}
+{% endmacro %}
+
+{% macro user(info, comment=None) %}
+{{ info.name }}, {{ info.age }}, {{ info.city }}
+{% if caller %}{{ caller() }}{% endif %}{% if comment %}{{ comment }}{% endif %}
+{% endmacro %}
+
+{% macro quote(text) %}
+> {{ text }}
+{% endmacro %}
+
+{% macro button(caption, target_url) %}
+{{ caption }}: {{ target_url }}
+{% endmacro %}
