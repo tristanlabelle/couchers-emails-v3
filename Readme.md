@@ -16,9 +16,9 @@
 
 ## Inner workings
 
-- Several jinja2 layout files define how to render a template as...
+- Several jinja2 [layout files](templates/include) define how to render a template as...
   - HTML, by templating args into HTML snippets
   - plaintext, by templating args as plaintext
   - a subject line, by ignoring args apart from the subject
-- We render the email dataclass three times, one per layout, to get a subject/plaintext/html tuple.
+- We render the email dataclass three times, one per layout, to get a subject/plaintext/html tuple. See outputs in [out](out).
 - We'll have a single mjml file defining the HTML template. Its HTML will need minor postprocessing to put into a shape jinja2 can use (i.e. layout + macros files).
